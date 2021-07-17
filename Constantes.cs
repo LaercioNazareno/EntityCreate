@@ -5,22 +5,25 @@ namespace EntityCreate
     public static class Constantes
     {
         public static string NAME_ENTITY = "";
-        private static string GetProjectName(){
-            return Path.GetDirectoryName("createAmbiente.sh");
+        private static string GetProjectName()
+        {
+            DirectoryInfo dir_info = new DirectoryInfo("createAmbiente.sh");
+            string path_base = dir_info.Parent.Parent.Name;
+            return path_base;
         }
         #region PATHS
-        public static string PATH_ENTITY = "../3-Domain/"+GetProjectName()+".Domain/Entities/";
+        public static string PATH_ENTITY = "../3-Domain/" + GetProjectName() + ".Domain/Entities/";
         public static string PATH_SAMPLES = "../EntityCreate/classSamples/";
-        public static string PATH_CONTEXT = "../4-Infra/4.1-Data/"+GetProjectName()+".Infra.Data/Context/";
-        public static string PATH_ENTITY_CONFIG = "../4-Infra/4.1-Data/"+GetProjectName()+".Infra.Data/EntityConfig/";
-        public static string PATH_REPOSITORY = "../4-Infra/4.1-Data/"+GetProjectName()+".Infra.Data/Repositories/";
-        public static string PATH_INTERFACE_REPOSITORY = "../3-Domain/"+GetProjectName()+".Domain/Interfaces/Repositories/";
-        public static string PATH_DTO = "../2-Application/"+GetProjectName()+".Application/DTO/";
-        public static string PATH_MAPPER = "../2-Application/"+GetProjectName()+".Application/Mapper/";
-        public static string PATH_SERVICE = "../3-Domain/"+GetProjectName()+".Domain/Services/";
-        public static string PATH_INTERFACE_SERVICE = "../3-Domain/"+GetProjectName()+".Domain/Interfaces/Services/";
-        public static string PATH_INTERFACE_APP_SERVICE = "../2-Application/"+GetProjectName()+".Application/Interfaces/";
-        public static string PATH_APP_SERVICE = "../2-Application/"+GetProjectName()+".Application/Services/";
+        public static string PATH_CONTEXT = "../4-Infra/4.1-Data/" + GetProjectName() + ".Infra.Data/Context/";
+        public static string PATH_ENTITY_CONFIG = "../4-Infra/4.1-Data/" + GetProjectName() + ".Infra.Data/EntityConfig/";
+        public static string PATH_REPOSITORY = "../4-Infra/4.1-Data/" + GetProjectName() + ".Infra.Data/Repositories/";
+        public static string PATH_INTERFACE_REPOSITORY = "../3-Domain/" + GetProjectName() + ".Domain/Interfaces/Repositories/";
+        public static string PATH_DTO = "../2-Application/" + GetProjectName() + ".Application/DTO/";
+        public static string PATH_MAPPER = "../2-Application/" + GetProjectName() + ".Application/Mapper/";
+        public static string PATH_SERVICE = "../3-Domain/" + GetProjectName() + ".Domain/Services/";
+        public static string PATH_INTERFACE_SERVICE = "../3-Domain/" + GetProjectName() + ".Domain/Interfaces/Services/";
+        public static string PATH_INTERFACE_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Interfaces/";
+        public static string PATH_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Services/";
         #endregion
 
 
