@@ -252,7 +252,6 @@ namespace EntityCreate
                 dictionary = new Dictionary<string, string>()
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_MAPPER},
-                    {Constantes.TAG_IMPORT_DTO, Constantes.NAMESPACE_DTO},
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY}
                 }
             };

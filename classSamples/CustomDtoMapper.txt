@@ -1,6 +1,5 @@
 using AutoMapper;
 using IMPORT_MODELS;
-using IMPORT_DTO;
 
 namespace NAMESPACE
 {
