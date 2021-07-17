@@ -251,12 +251,8 @@ namespace EntityCreate
                 nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
-                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
-                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_SERVICE},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
-                    {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
-                    {Constantes.TAG_CLASS_NAME, name}
+                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_MAPPER},
+                    {Constantes.TAG_IMPORT_DTO, Constantes.NAMESPACE_DTO}
                 }
             };
         }
