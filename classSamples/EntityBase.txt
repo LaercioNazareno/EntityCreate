@@ -1,0 +1,12 @@
+using System;
+
+namespace NAMESPACE
+{
+    public class EntityBase
+    {
+        public int Id { get; set; }
+        public DateTime dateRegister { get; set; }
+        public DateTime dateUpdate { get; set; }
+        
+    }
+}
