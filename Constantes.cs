@@ -3,8 +3,8 @@ namespace EntityCreate
     public static class Constantes
     {
 
-        public const string NAME_ENTITY = "Produto";
-        private const string PROJECT_NAME = "DDD_Dotnet";
+        public const string NAME_ENTITY = "";
+        private const string PROJECT_NAME = "";
 
         #region PATHS
         public const string PATH_ENTITY = "";
