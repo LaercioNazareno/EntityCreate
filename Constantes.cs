@@ -7,18 +7,18 @@ namespace EntityCreate
         private const string PROJECT_NAME = "DDD_Dotnet";
 
         #region PATHS
-        public const string PATH_ENTITY = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/3-Domain/DDD_Dotnet.Domain/Entities/";
-        public const string PATH_SAMPLES = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/EntityCreate/classSamples/";
-        public const string PATH_CONTEXT = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/4-Infra/4.1-Data/DDD_Dotnet.Infra.Data/Context/";
-        public const string PATH_ENTITY_CONFIG = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/4-Infra/4.1-Data/DDD_Dotnet.Infra.Data/EntityConfig/";
-        public const string PATH_REPOSITORY = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/4-Infra/4.1-Data/DDD_Dotnet.Infra.Data/Repositories/";
-        public const string PATH_INTERFACE_REPOSITORY = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/3-Domain/DDD_Dotnet.Domain/Interfaces/Repositories/";
-        public const string PATH_DTO = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/2-Application/DDD_Dotnet.Application/DTO/";
-        public const string PATH_MAPPER = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/2-Application/DDD_Dotnet.Application/AutoMapper/";
-        public const string PATH_SERVICE = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/3-Domain/DDD_Dotnet.Domain/Services/";
-        public const string PATH_INTERFACE_SERVICE = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/3-Domain/DDD_Dotnet.Domain/Interfaces/Services/";
-        public const string PATH_INTERFACE_APP_SERVICE = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/2-Application/DDD_Dotnet.Application/Interfaces/";
-        public const string PATH_APP_SERVICE = "/home/laercio/Projetos/DDD/DDD_Dotnet/DDD_Dotnet/2-Application/DDD_Dotnet.Application/Services/";
+        public const string PATH_ENTITY = "";
+        public const string PATH_SAMPLES = "";
+        public const string PATH_CONTEXT = "";
+        public const string PATH_ENTITY_CONFIG = "";
+        public const string PATH_REPOSITORY = "";
+        public const string PATH_INTERFACE_REPOSITORY = "";
+        public const string PATH_DTO = "";
+        public const string PATH_MAPPER = "";
+        public const string PATH_SERVICE = "";
+        public const string PATH_INTERFACE_SERVICE = "";
+        public const string PATH_INTERFACE_APP_SERVICE = "";
+        public const string PATH_APP_SERVICE = "";
         #endregion
 
         #region NAMESPACES
