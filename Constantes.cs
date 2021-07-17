@@ -24,7 +24,7 @@ namespace EntityCreate
         public static string PATH_INTERFACE_SERVICE = "../3-Domain/" + GetProjectName() + ".Domain/Interfaces/Services/";
         public static string PATH_INTERFACE_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Interfaces/";
         public static string PATH_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Services/";
-        public static string PATH_IOC = "../4-Infra/4.2-CrossCutting/" + GetProjectName() + ".DDD_Dotnet.Infra.Ioc/";
+        public static string PATH_IOC = "../4-Infra/4.2-CrossCutting/" + GetProjectName() + ".Infra.Ioc/";
         #endregion
 
 
