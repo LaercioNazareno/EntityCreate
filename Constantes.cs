@@ -24,6 +24,7 @@ namespace EntityCreate
         public static string PATH_INTERFACE_SERVICE = "../3-Domain/" + GetProjectName() + ".Domain/Interfaces/Services/";
         public static string PATH_INTERFACE_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Interfaces/";
         public static string PATH_APP_SERVICE = "../2-Application/" + GetProjectName() + ".Application/Services/";
+        public static string PATH_IOC = "../4-Infra/4.2-CrossCutting/" + GetProjectName() + ".DDD_Dotnet.Infra.Ioc/";
         #endregion
 
 
@@ -39,6 +40,7 @@ namespace EntityCreate
         public static readonly string NAMESPACE_INTERFACE_SERVICE = $"{GetProjectName()}.Domain.Interfaces.Services";
         public static readonly string NAMESPACE_INTERFACE_APP_SERVICE = $"{GetProjectName()}.Application.Interfaces";
         public static readonly string NAMESPACE_APP_SERVICE = $"{GetProjectName()}.Application.Service";
+        public static readonly string NAMESPACE_IOC = $"{GetProjectName()}.Infra.CrossCutting.IoC";
 
         #endregion
 
@@ -49,6 +51,7 @@ namespace EntityCreate
         public static string TAG_IMPORT_REPOSITORY = "IMPORT_REPOSITORY";
         public static string TAG_IMPORT_INTEFARCE_REPOSITORY = "IMPORT_INTERFACE_REPOSITORY";
         public static string TAG_IMPORT_INTERFACE_SERVICE = "IMPORT_INTERFACE_SERVICE";
+        public static string TAG_IMPORT_SERVICE = "IMPORT_SERVICE";
         public static string TAG_IMPORT_INTERFACE_APP_SERVICE = "IMPORT_INTERFACE_APP_SERVICE";
         public static string TAG_IMPORT_APP_SERVICE = "IMPORT_APP_SERVICE";
         public static string TAG_ENTITY_TYPE = "ENTITY_TYPE";
@@ -74,6 +77,7 @@ namespace EntityCreate
         public static string SERVICE_TYPE = "Service.txt";
         public static string I_SERVICE_TYPE = "IService.txt";
         public static string CUSTOM_MAPPER_TYPE = "CustomDtoMapper.txt";
+        public static string IOC_TYPE = "DependencyInjection.txt";
         #endregion
     }
 }

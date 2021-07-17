@@ -52,6 +52,7 @@ namespace EntityCreate
             fileCreateList.Add(FileCreate.CustomMapper());
             fileCreateList.Add(FileCreate.ServiceBase());
             fileCreateList.Add(FileCreate.IServiceBase());
+            fileCreateList.Add(FileCreate.DependencyInjection());
             
             return fileCreateList;
         }
