@@ -7,19 +7,20 @@ namespace EntityCreate
         private const string PROJECT_NAME = "";
 
         #region PATHS
-        public const string PATH_ENTITY = "";
-        public const string PATH_SAMPLES = "";
-        public const string PATH_CONTEXT = "";
-        public const string PATH_ENTITY_CONFIG = "";
-        public const string PATH_REPOSITORY = "";
-        public const string PATH_INTERFACE_REPOSITORY = "";
-        public const string PATH_DTO = "";
-        public const string PATH_MAPPER = "";
-        public const string PATH_SERVICE = "";
-        public const string PATH_INTERFACE_SERVICE = "";
-        public const string PATH_INTERFACE_APP_SERVICE = "";
-        public const string PATH_APP_SERVICE = "";
+        public const string PATH_ENTITY = "../3-Domain/Novo.Domain/Entities/";
+        public const string PATH_SAMPLES = "../EntityCreate/classSamples/";
+        public const string PATH_CONTEXT = "../4-Infra/4.1-Data/Novo.Infra.Data/Context/";
+        public const string PATH_ENTITY_CONFIG = "../4-Infra/4.1-Data/Novo.Infra.Data/EntityConfig/";
+        public const string PATH_REPOSITORY = "../4-Infra/4.1-Data/Novo.Infra.Data/Repositories/";
+        public const string PATH_INTERFACE_REPOSITORY = "../3-Domain/Novo.Domain/Interfaces/Repositories/";
+        public const string PATH_DTO = "../2-Application/Novo.Application/DTO/";
+        public const string PATH_MAPPER = "../2-Application/Novo.Application/Mapper/";
+        public const string PATH_SERVICE = "../3-Domain/Novo.Domain/Services/";
+        public const string PATH_INTERFACE_SERVICE = "../3-Domain/Novo.Domain/Interfaces/Services/";
+        public const string PATH_INTERFACE_APP_SERVICE = "../2-Application/Novo.Application/Interfaces/";
+        public const string PATH_APP_SERVICE = "../2-Application/Novo.Application/Services/";
         #endregion
+
 
         #region NAMESPACES
         public static readonly string NAMESPACE_ENTITY = $"{PROJECT_NAME}.Domain.Entities";
