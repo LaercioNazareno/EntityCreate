@@ -53,8 +53,8 @@ namespace EntityCreate
             fileCreateList.Add(FileCreate.ServiceBase());
             fileCreateList.Add(FileCreate.IServiceBase());
             fileCreateList.Add(FileCreate.DependencyInjection());
-            fileCreateList.Add(FileCreate.IAppService());
-            fileCreateList.Add(FileCreate.AppService());
+            fileCreateList.Add(FileCreate.IAppServiceBase());
+            fileCreateList.Add(FileCreate.AppServiceBase());
             
             return fileCreateList;
         }

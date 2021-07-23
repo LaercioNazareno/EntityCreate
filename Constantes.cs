@@ -78,6 +78,8 @@ namespace EntityCreate
         public static string I_SERVICE_TYPE = "IService.txt";
         public static string CUSTOM_MAPPER_TYPE = "CustomDtoMapper.txt";
         public static string IOC_TYPE = "DependencyInjection.txt";
+        public static string APP_SERVICE_BASE_TYPE = "AppServiceBase.txt";
+        public static string I_APP_SERVICE_BASE_TYPE = "IAppServiceBase.txt";
         #endregion
     }
 }

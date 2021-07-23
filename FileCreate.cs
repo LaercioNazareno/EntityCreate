@@ -189,6 +189,21 @@ namespace EntityCreate
                 }
             };
         }
+         public static FileCreate IAppServiceBase()
+        {
+            var name = "IAppServiceBase";
+            return new FileCreate()
+            {
+                path = Constantes.PATH_INTERFACE_APP_SERVICE,
+                type = Constantes.I_APP_SERVICE_TYPE,
+                nameFile = name,
+                dictionary = new Dictionary<string, string>()
+                {
+                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
+                    {Constantes.TAG_CLASS_NAME, name}
+                }
+            };
+        }
         public static FileCreate AppService()
         {
             var name = $"{Constantes.NAME_ENTITY}AppService";
@@ -196,6 +211,24 @@ namespace EntityCreate
             {
                 path = Constantes.PATH_APP_SERVICE,
                 type = Constantes.APP_SERVICE_TYPE,
+                nameFile = name,
+                dictionary = new Dictionary<string, string>()
+                {
+                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_APP_SERVICE},
+                    {Constantes.TAG_CLASS_NAME, name},
+                    {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
+                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
+                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
+                }
+            };
+        }
+        public static FileCreate AppServiceBase()
+        {
+            var name = "AppServiceBase";
+            return new FileCreate()
+            {
+                path = Constantes.PATH_APP_SERVICE,
+                type = Constantes.APP_SERVICE_BASE_TYPE,
                 nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {
