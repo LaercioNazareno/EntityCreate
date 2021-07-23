@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;   
 using IMPORT_INTERFACE_SERVICE;
 using IMPORT_INTERFACE_REPOSITORY;
 
@@ -19,7 +20,7 @@ namespace NAMESPACE
 
         public void Delete(TEntity obj)
         {
-            _repository.Remove(obj);
+            _repository.Delete(obj);
         }
 
         public void Dispose()
@@ -36,7 +37,7 @@ namespace NAMESPACE
         {
             _repository.Update(obj);
         }
-        public IEnumerable<TEntity> GetAll()
+        public List<TEntity> GetAll()
         {
             return _repository.GetAll();
         }
