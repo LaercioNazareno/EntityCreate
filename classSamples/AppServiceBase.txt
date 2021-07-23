@@ -9,7 +9,7 @@ namespace NAMESPACE
     {
         private readonly IServiceBase<TEntity> _serviceBase;
 
-        public AppServiceBase(IAppServiceBase<TEntity> serviceBase)
+        public AppServiceBase(IServiceBase<TEntity> serviceBase)
         {
             _serviceBase = serviceBase;
         }
@@ -36,7 +36,7 @@ namespace NAMESPACE
 
         public void Remove(TEntity obj)
         {
-            _serviceBase.Remove(obj);
+            _serviceBase.Delete(obj);
         }
 
         public void Dispose()

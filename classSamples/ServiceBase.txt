@@ -36,5 +36,9 @@ namespace NAMESPACE
         {
             _repository.Update(obj);
         }
+        public IEnumerable<TEntity> GetAll()
+        {
+            return _repository.GetAll();
+        }
     }
 }

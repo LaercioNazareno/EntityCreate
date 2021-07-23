@@ -228,7 +228,7 @@ namespace EntityCreate
             return new FileCreate()
             {
                 path = Constantes.PATH_APP_SERVICE,
-                type = Constantes.APP_SERVICE_BASE_TYPE,
+                type = Constantes.I_APP_SERVICE_BASE_TYPE,
                 nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {
