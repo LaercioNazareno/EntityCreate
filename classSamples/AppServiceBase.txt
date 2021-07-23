@@ -34,7 +34,7 @@ namespace NAMESPACE
             _serviceBase.Update(obj);
         }
 
-        public void Remove(TEntity obj)
+        public void Delete(TEntity obj)
         {
             _serviceBase.Delete(obj);
         }
