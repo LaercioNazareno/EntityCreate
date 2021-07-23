@@ -23,7 +23,7 @@ namespace NAMESPACE
             context.Set<TEntity>().Add(obj);
             return obj;
         }
-        public IEnumerable<TEntity> GetAll()
+        public List<TEntity> GetAll()
         {
             return context.Set<TEntity>().ToList();
         }
@@ -60,7 +60,7 @@ namespace NAMESPACE
         {
             return context.Set<TEntity>().Find(Id);
         }
-        public TEntity Remove(TEntity obj)
+        public TEntity Delete(TEntity obj)
         {
             context.Remove(obj);
             return obj;
