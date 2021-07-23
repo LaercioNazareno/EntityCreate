@@ -201,7 +201,8 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_APP_SERVICE},
                     {Constantes.TAG_CLASS_NAME, name},
-                    {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE}
+                    {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
+                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE}
                 }
             };
         }

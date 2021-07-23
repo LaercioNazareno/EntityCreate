@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using IMPORT_INTERFACE_APP_SERVICE;
+using IMPORT_INTERFACE_SERVICE;
 
 namespace NAMESPACE
 {
     public class CLASSNAME: ICLASSNAME
     {
-        private readonly IAppServiceBase<TEntity> _serviceBase;
+        private readonly IServiceBase<TEntity> _serviceBase;
 
         public AppServiceBase(IAppServiceBase<TEntity> serviceBase)
         {
