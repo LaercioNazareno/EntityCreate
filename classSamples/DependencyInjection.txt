@@ -1,0 +1,26 @@
+using Microsoft.Extensions.DependencyInjection;
+using IMPORT_INTERFACE_APP_SERVICE;
+using IMPORT_APP_SERVICE;
+using IMPORT_INTERFACE_SERVICE;
+using IMPORT_SERVICE;
+using IMPORT_INTERFACE_REPOSITORY;
+using IMPORT_REPOSITORY;
+
+namespace NAMESPACE
+{
+    public class DependencyInjection
+    {
+        public static void Registrar(IServiceCollection serviceCollection)
+        {
+            
+            //Aplicação
+            serviceCollection.AddScoped(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
+            
+            //Domínio
+            serviceCollection.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
+            
+            //Repositorio
+            serviceCollection.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+        }
+    }
+}

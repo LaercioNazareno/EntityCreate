@@ -80,7 +80,7 @@ namespace EntityCreate
                 path = Constantes.PATH_REPOSITORY,
                 type = Constantes.REPOSITORY_BASE_TYPE,
                 nameFile = $"RepositoryBase",
-                dictionary  = new Dictionary<string, string>()
+                dictionary = new Dictionary<string, string>()
                 {
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_REPOSITORY},
@@ -251,12 +251,8 @@ namespace EntityCreate
                 nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
-                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
-                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_SERVICE},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
-                    {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
-                    {Constantes.TAG_CLASS_NAME, name}
+                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_MAPPER},
+                    {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY}
                 }
             };
         }
@@ -271,6 +267,29 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_ENTITY}
+                }
+            };
+        }
+        public static FileCreate DependencyInjection()
+        {
+            return new FileCreate()
+            {
+                path = Constantes.PATH_IOC,
+                type = Constantes.IOC_TYPE,
+                nameFile = "DependencyInjection",
+                dictionary = new Dictionary<string, string>()
+                {
+                    {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
+                    {Constantes.TAG_IMPORT_REPOSITORY, Constantes.NAMESPACE_REPOSITORY},
+                    
+                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
+                    {Constantes.TAG_IMPORT_SERVICE, Constantes.NAMESPACE_SERVICE},
+                    
+                    {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_IOC},
+                    
+                    {Constantes.TAG_IMPORT_APP_SERVICE, Constantes.NAMESPACE_APP_SERVICE},
+                    {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
+                    
                 }
             };
         }
