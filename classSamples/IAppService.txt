@@ -1,6 +1,6 @@
 namespace NAMESPACE
 {
-    public interface CLASSNAME
+    public interface CLASSNAME<TEntity> where TEntity: class
     {
         
     }
