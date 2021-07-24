@@ -26,14 +26,15 @@ namespace EntityCreate
         }
         public static FileCreate Context()
         {
+            var name = Constantes.GetProjectName()+"Context";
             return new FileCreate()
             {
                 path = Constantes.PATH_CONTEXT,
                 type = Constantes.CONTEXT_TYPE,
-                nameFile = Constantes.GetProjectName()+"Context",
+                nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_CLASS_NAME, name},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_CONTEXT}
                 }
             };
