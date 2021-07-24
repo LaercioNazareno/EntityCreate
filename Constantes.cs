@@ -30,7 +30,7 @@ namespace EntityCreate
 
         #region NAMESPACES
         public static readonly string NAMESPACE_ENTITY = $"{GetProjectName()}.Domain.Entities";
-        public static readonly string NAMESPACE_CONTEXT = $"{GetProjectName()}.Infra.Data.Contexto";
+        public static readonly string NAMESPACE_CONTEXT = $"{GetProjectName()}.Infra.Data.Context";
         public static readonly string NAMESPACE_ENTITY_CONFIG = $"{GetProjectName()}.Infra.Data.EntityConfig";
         public static readonly string NAMESPACE_REPOSITORY = $"{GetProjectName()}.Infra.Data.Repositories";
         public static readonly string NAMESPACE_INTERFACE_REPOSITORY = $"{GetProjectName()}.Domain.Interfaces.Repositories";
