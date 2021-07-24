@@ -39,7 +39,7 @@ namespace EntityCreate
         public static readonly string NAMESPACE_SERVICE = $"{GetProjectName()}.Domain.Services";
         public static readonly string NAMESPACE_INTERFACE_SERVICE = $"{GetProjectName()}.Domain.Interfaces.Services";
         public static readonly string NAMESPACE_INTERFACE_APP_SERVICE = $"{GetProjectName()}.Application.Interfaces";
-        public static readonly string NAMESPACE_APP_SERVICE = $"{GetProjectName()}.Application.Service";
+        public static readonly string NAMESPACE_APP_SERVICE = $"{GetProjectName()}.Application.AppServices";
         public static readonly string NAMESPACE_IOC = $"{GetProjectName()}.Infra.CrossCutting.IoC";
 
         #endregion
