@@ -88,7 +88,8 @@ namespace EntityCreate
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_CONTXT, Constantes.NAMESPACE_CONTEXT},
-                    {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY}
+                    {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
+                    {Constantes.TAG_CONTEXT, Constantes.CONTEXT}
                 }
             };
         }

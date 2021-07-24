@@ -6,7 +6,7 @@ namespace NAMESPACE
 {
     public class CLASSNAME : RepositoryBase<ENTITY_TYPE>, IENTITY_TYPERepository
     {
-        public CLASSNAME(Context context) : base(context)
+        public CLASSNAME(CONTEXT context) : base(context)
         {
         }
     }

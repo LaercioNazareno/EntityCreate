@@ -11,6 +11,7 @@ namespace EntityCreate
             string path_base = dir_info.Parent.Parent.Name;
             return path_base;
         }
+        public static string CONTEXT = GetProjectName()+ "Context";
         #region PATHS
         public static string PATH_ENTITY = "../3-Domain/" + GetProjectName() + ".Domain/Entities/";
         public static string PATH_SAMPLES = "../EntityCreate/classSamples/";
@@ -57,6 +58,7 @@ namespace EntityCreate
         public static string TAG_ENTITY_TYPE = "ENTITY_TYPE";
         public static string TAG_IMPORT_CONTXT = "IMPORT_CONTXT";
         public static string TAG_IMPORT_DTO = "IMPORT_DTO";
+        public static string TAG_CONTEXT = "CONTEXT";
         #endregion
 
         #region TYPES

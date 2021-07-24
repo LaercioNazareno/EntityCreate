@@ -11,10 +11,10 @@ namespace NAMESPACE
 {
     public class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
     {
-        private Context context;
+        private CONTEXT context;
         private bool disposed = false;
 
-        public RepositoryBase(Context context)
+        public RepositoryBase(CONTEXT context)
         {
             this.context = context;
         }
