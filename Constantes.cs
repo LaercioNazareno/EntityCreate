@@ -5,7 +5,7 @@ namespace EntityCreate
     public static class Constantes
     {
         public static string NAME_ENTITY = "";
-        private static string GetProjectName()
+        public static string GetProjectName()
         {
             DirectoryInfo dir_info = new DirectoryInfo("createAmbiente.sh");
             string path_base = dir_info.Parent.Parent.Name;

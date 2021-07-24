@@ -5,14 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NAMESPACE
 {
-    public class Context: DbContext
+    public class CLASSNAME: DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
-            optionsBuilder.UseMySql(
-                "server=localhost;database=ddd_tables;user=root;password=",
-                new MySqlServerVersion(new Version(8, 0, 11))
-            );
+            optionsBuilder.UseMySql();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

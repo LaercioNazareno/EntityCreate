@@ -30,9 +30,10 @@ namespace EntityCreate
             {
                 path = Constantes.PATH_CONTEXT,
                 type = Constantes.CONTEXT_TYPE,
-                nameFile = "Context",
+                nameFile = Constantes.GetProjectName()+"Context",
                 dictionary = new Dictionary<string, string>()
                 {
+                    {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_CONTEXT}
                 }
             };
