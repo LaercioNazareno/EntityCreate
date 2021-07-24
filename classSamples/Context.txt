@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NAMESPACE
 {
-    public class CLASSNAME: DbContext
+    public class CLASSNAME : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
