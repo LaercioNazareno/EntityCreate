@@ -4,7 +4,7 @@ namespace EntityCreate
 {
     public static class Constantes
     {
-        public static string NAME_ENTITY = "";
+        public static string NAME_ENTITY = "Client";
         public static string GetProjectName()
         {
             DirectoryInfo dir_info = new DirectoryInfo("createAmbiente.sh");

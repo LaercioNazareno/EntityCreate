@@ -1,6 +1,6 @@
 namespace NAMESPACE
 {
-    public interface CLASSNAME<TEntity> where TEntity: class
+    public interface CLASSNAME: IAppServiceBase<ENTITY_TYPE>
     {
         
     }

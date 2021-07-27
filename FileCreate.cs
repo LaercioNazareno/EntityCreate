@@ -188,7 +188,8 @@ namespace EntityCreate
                 dictionary = new Dictionary<string, string>()
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
-                    {Constantes.TAG_CLASS_NAME, name}
+                    {Constantes.TAG_CLASS_NAME, name},
+                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
                 }
             };
         }
@@ -204,6 +205,7 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
                     {Constantes.TAG_CLASS_NAME, name}
+                
                 }
             };
         }
