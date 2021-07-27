@@ -9,7 +9,7 @@ namespace EntityCreate
     {
         static void Main(string[] args)
         {
-            //Create.CreateStruct();
+            Create.CreateStruct();
             Create.CreateEntity();
         }
     }

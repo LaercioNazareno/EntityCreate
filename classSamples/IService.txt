@@ -1,7 +1,8 @@
 using IMPORT_MODELS;
+
 namespace NAMESPACE
 {
-    public interface CLASSNAME: IServiceBase<ENTITY_TYPE>
+    public interface CLASSNAME: IDisposable, IAppServiceBase<ENTITY_TYPE> where TEntity : class
     {
         
     }
