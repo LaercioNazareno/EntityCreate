@@ -199,7 +199,7 @@ namespace EntityCreate
             return new FileCreate()
             {
                 path = Constantes.PATH_INTERFACE_APP_SERVICE,
-                type = Constantes.I_APP_SERVICE_TYPE,
+                type = Constantes.I_APP_SERVICE_BASE_TYPE,
                 nameFile = name,
                 dictionary = new Dictionary<string, string>()
                 {

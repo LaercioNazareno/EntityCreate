@@ -24,7 +24,7 @@ namespace NAMESPACE
             return _serviceBase.GetById(id);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public List<TEntity> GetAll()
         {
             return _serviceBase.GetAll();
         }
