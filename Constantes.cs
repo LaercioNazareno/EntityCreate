@@ -4,14 +4,13 @@ namespace EntityCreate
 {
     public static class Constantes
     {
-        public static string NAME_ENTITY = "Client";
         public static string GetProjectName()
         {
             DirectoryInfo dir_info = new DirectoryInfo("createAmbiente.sh");
             string path_base = dir_info.Parent.Parent.Name;
             return path_base;
         }
-        public static string CONTEXT = GetProjectName()+ "Context";
+        public static string CONTEXT = GetProjectName() + "Context";
         #region PATHS
         public static string PATH_ENTITY = "../3-Domain/" + GetProjectName() + ".Domain/Entities/";
         public static string PATH_SAMPLES = "../EntityCreate/classSamples/";

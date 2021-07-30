@@ -19,7 +19,6 @@ namespace EntityCreate
                 nameFile = "EntityBase",
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_ENTITY}
                 }
             };
@@ -39,9 +38,9 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate EntityConfig()
+        public static FileCreate EntityConfig(string nameEntity)
         {
-            var name = $"{Constantes.NAME_ENTITY}Configuration";
+            var name = $"{nameEntity}Configuration";
             return new FileCreate()
             {
                 path = Constantes.PATH_ENTITY_CONFIG,
@@ -52,13 +51,13 @@ namespace EntityCreate
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_ENTITY_CONFIG},
                     {Constantes.TAG_CLASS_NAME, name},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity}
                 }
             };
         }
-        public static FileCreate Repository()
+        public static FileCreate Repository(string nameEntity)
         {
-            var name = $"{Constantes.NAME_ENTITY}Repository";
+            var name = $"{nameEntity}Repository";
             return new FileCreate()
             {
                 path = Constantes.PATH_REPOSITORY,
@@ -68,7 +67,7 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
                     {Constantes.TAG_CLASS_NAME, name},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_CONTXT, Constantes.NAMESPACE_CONTEXT}
@@ -93,18 +92,18 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate IRepository()
+        public static FileCreate IRepository(string nameEntity)
         {
             return new FileCreate()
             {
                 path = Constantes.PATH_INTERFACE_REPOSITORY,
                 type = Constantes.I_REPOSITORY_TYPE,
-                nameFile = $"I{Constantes.NAME_ENTITY}Repository",
+                nameFile = $"I{nameEntity}Repository",
                 dictionary = new Dictionary<string, string>()
                 {
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
                     {Constantes.TAG_IMPORT_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_REPOSITORY}
                 }
             };
@@ -122,16 +121,16 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate Dto()
+        public static FileCreate Dto(string nameEntity)
         {
             return new FileCreate()
             {
                 path = Constantes.PATH_DTO,
                 type = Constantes.DTO_TYPE,
-                nameFile = $"{Constantes.NAME_ENTITY}DTO",
+                nameFile = $"{nameEntity}DTO",
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_CLASS_NAME, nameEntity},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_DTO}
                 }
             };
@@ -177,9 +176,9 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate IAppService()
+        public static FileCreate IAppService(string nameEntity)
         {
-            var name = $"I{Constantes.NAME_ENTITY}AppService";
+            var name = $"I{nameEntity}AppService";
             return new FileCreate()
             {
                 path = Constantes.PATH_INTERFACE_APP_SERVICE,
@@ -189,7 +188,7 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
                     {Constantes.TAG_CLASS_NAME, name},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity}
                 }
             };
         }
@@ -209,9 +208,9 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate AppService()
+        public static FileCreate AppService(string nameEntity)
         {
-            var name = $"{Constantes.NAME_ENTITY}AppService";
+            var name = $"{nameEntity}AppService";
             return new FileCreate()
             {
                 path = Constantes.PATH_APP_SERVICE,
@@ -223,7 +222,7 @@ namespace EntityCreate
                     {Constantes.TAG_CLASS_NAME, name},
                     {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
                     {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
-                    // {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity}
                 }
             };
         }
@@ -240,14 +239,13 @@ namespace EntityCreate
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_APP_SERVICE},
                     {Constantes.TAG_CLASS_NAME, name},
                     {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
-                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY}
+                    {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE}
                 }
             };
         }
-        public static FileCreate IService()
+        public static FileCreate IService(string nameEntity)
         {
-            var name = $"I{Constantes.NAME_ENTITY}Service";
+            var name = $"I{nameEntity}Service";
             return new FileCreate()
             {
                 path = Constantes.PATH_INTERFACE_SERVICE,
@@ -257,14 +255,14 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_INTERFACE_SERVICE},
                     {Constantes.TAG_CLASS_NAME, name},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity},
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY}
                 }
             };
         }
-        public static FileCreate Service()
+        public static FileCreate Service(string nameEntity)
         {
-            var name = $"{Constantes.NAME_ENTITY}Service";
+            var name = $"{nameEntity}Service";
             return new FileCreate()
             {
                 path = Constantes.PATH_SERVICE,
@@ -275,7 +273,7 @@ namespace EntityCreate
                     {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_SERVICE},
-                    {Constantes.TAG_ENTITY_TYPE, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_ENTITY_TYPE, nameEntity},
                     {Constantes.TAG_IMPORT_MODELS, Constantes.NAMESPACE_ENTITY},
                     {Constantes.TAG_CLASS_NAME, name}
                 }
@@ -296,16 +294,16 @@ namespace EntityCreate
                 }
             };
         }
-        public static FileCreate Entity()
+        public static FileCreate Entity(string nameEntity)
         {
             return new FileCreate()
             {
                 path = Constantes.PATH_ENTITY,
                 type = Constantes.ENTITY_TYPE,
-                nameFile = Constantes.NAME_ENTITY,
+                nameFile = nameEntity,
                 dictionary = new Dictionary<string, string>()
                 {
-                    {Constantes.TAG_CLASS_NAME, Constantes.NAME_ENTITY},
+                    {Constantes.TAG_CLASS_NAME, nameEntity},
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_ENTITY}
                 }
             };

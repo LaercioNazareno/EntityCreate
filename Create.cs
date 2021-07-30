@@ -9,9 +9,36 @@ namespace EntityCreate
     {
         public static void CreateEntity()
         {
-            var fileCreateList = GetFilesEntity();
+            var nameEntity = "client";
+            var fileCreateList = GetFilesEntity(nameEntity);
             CreateFiles(fileCreateList);
         }
+
+        public static void CreateUserCase()
+        {
+            var fileCreateList = GetFilesUserCase();
+
+            var nameEntities = new List<string>()
+            {
+                "Client"
+            };
+            foreach (var entity in nameEntities)
+            {
+                fileCreateList.AddRange(GetFilesEntity(entity));
+            }
+            CreateFiles(fileCreateList);
+        }
+
+        private static List<FileCreate> GetFilesUserCase()
+        {            
+            var fileCreateList = new List<FileCreate>();
+            var userCaseName = "Client";
+            fileCreateList.Add(FileCreate.AppService(userCaseName));
+            fileCreateList.Add(FileCreate.IAppService(userCaseName));
+
+            return fileCreateList;
+        }
+
         public static void CreateStruct()
         {
             var fileCreateList = GetFilesStruct();
@@ -24,19 +51,17 @@ namespace EntityCreate
                 create(fileCreate);
             }
         }
-        private static List<FileCreate> GetFilesEntity()
+        private static List<FileCreate> GetFilesEntity(string nameEntity)
         {
             var fileCreateList = new List<FileCreate>();
 
-            fileCreateList.Add(FileCreate.Entity());
-            fileCreateList.Add(FileCreate.EntityConfig());
-            fileCreateList.Add(FileCreate.IRepository());
-            fileCreateList.Add(FileCreate.Repository());
-            fileCreateList.Add(FileCreate.Dto());
-            fileCreateList.Add(FileCreate.IAppService());
-            fileCreateList.Add(FileCreate.AppService());
-            fileCreateList.Add(FileCreate.IService());
-            fileCreateList.Add(FileCreate.Service());
+            fileCreateList.Add(FileCreate.Entity(nameEntity));
+            fileCreateList.Add(FileCreate.EntityConfig(nameEntity));
+            fileCreateList.Add(FileCreate.IRepository(nameEntity));
+            fileCreateList.Add(FileCreate.Repository(nameEntity));
+            fileCreateList.Add(FileCreate.Dto(nameEntity));
+            fileCreateList.Add(FileCreate.IService(nameEntity));
+            fileCreateList.Add(FileCreate.Service(nameEntity));
             
             return fileCreateList;
         }
