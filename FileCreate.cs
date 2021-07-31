@@ -320,15 +320,12 @@ namespace EntityCreate
                 {
                     {Constantes.TAG_IMPORT_INTEFARCE_REPOSITORY, Constantes.NAMESPACE_INTERFACE_REPOSITORY},
                     {Constantes.TAG_IMPORT_REPOSITORY, Constantes.NAMESPACE_REPOSITORY},
-                    
                     {Constantes.TAG_IMPORT_INTERFACE_SERVICE, Constantes.NAMESPACE_INTERFACE_SERVICE},
                     {Constantes.TAG_IMPORT_SERVICE, Constantes.NAMESPACE_SERVICE},
-                    
                     {Constantes.TAG_NAME_SPACE, Constantes.NAMESPACE_IOC},
-                    
                     {Constantes.TAG_IMPORT_APP_SERVICE, Constantes.NAMESPACE_APP_SERVICE},
                     {Constantes.TAG_IMPORT_INTERFACE_APP_SERVICE, Constantes.NAMESPACE_INTERFACE_APP_SERVICE},
-                    
+                    {Constantes.TAG_IMPORT_CONTXT, Constantes.NAMESPACE_CONTEXT},   
                 }
             };
         }
