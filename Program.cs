@@ -10,7 +10,7 @@ namespace EntityCreate
         static void Main(string[] args)
         {
             Create.CreateStruct();
-            Create.CreateUserCase();
+            //Create.CreateUserCase();
         }
     }
 }

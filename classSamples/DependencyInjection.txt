@@ -10,17 +10,30 @@ namespace NAMESPACE
 {
     public class DependencyInjection
     {
-        public static void Registrar(IServiceCollection serviceCollection)
+       public static void Configure(IServiceCollection serviceCollection)
         {
-            
+            RegisterContext(serviceCollection);
+            RegisterScoped(serviceCollection);
+        }
+
+        private static void RegisterContext(IServiceCollection serviceCollection)
+        {
+            serviceCollection.AddDbContext<DDD_DotnetContext>();
+        }
+
+        private static void RegisterScoped(IServiceCollection serviceCollection)
+        {
             //Aplicação
             serviceCollection.AddScoped(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
-            
+            // serviceCollection.AddScoped(typeof(IClientAppService), typeof(ClientAppService));
+
             //Domínio
             serviceCollection.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
-            
+            serviceCollection.AddScoped(typeof(IClientService), typeof(ClientService));
+
             //Repositorio
             serviceCollection.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+            serviceCollection.AddScoped(typeof(IClientRepository), typeof(ClientRepository));
         }
     }
 }
