@@ -34,7 +34,6 @@ namespace NAMESPACE
         {
             //Aplicação
             serviceCollection.AddScoped(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
-            // serviceCollection.AddScoped(typeof(IClientAppService), typeof(ClientAppService));
 
             //Domínio
             serviceCollection.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
