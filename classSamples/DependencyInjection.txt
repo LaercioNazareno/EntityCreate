@@ -17,9 +17,14 @@ namespace NAMESPACE
             RegisterScoped(serviceCollection);
         }
 
-        private static void RegisterContext(IServiceCollection serviceCollection)
+         private static void RegisterContext(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddDbContext<DDD_DotnetContext>();
+            serviceCollection.AddDbContext<>(options =>
+                options.UseMySql(
+                    "",
+                    new MySqlServerVersion(new Version(8, 0, 11))
+                )
+            );
         }
 
         private static void RegisterScoped(IServiceCollection serviceCollection)

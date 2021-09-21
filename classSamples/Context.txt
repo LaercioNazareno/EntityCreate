@@ -7,10 +7,11 @@ namespace NAMESPACE
 {
     public class CLASSNAME : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        { 
-            optionsBuilder.UseMySql();
+
+        public CLASSNAME(DbContextOptions<CLASSNAME> options): base(options)
+        {
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
