@@ -38,11 +38,9 @@ namespace NAMESPACE
 
             //Domínio
             serviceCollection.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
-            serviceCollection.AddScoped(typeof(IClientService), typeof(ClientService));
 
             //Repositorio
             serviceCollection.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
-            serviceCollection.AddScoped(typeof(IClientRepository), typeof(ClientRepository));
         }
     }
 }
