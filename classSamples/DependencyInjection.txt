@@ -14,17 +14,17 @@ namespace NAMESPACE
 {
     public class DependencyInjection
     {
-       public static void Configure(IServiceCollection serviceCollection)
+       public static void Configure(IServiceCollection serviceCollection, string connectionString)
         {
-            RegisterContext(serviceCollection);
+            RegisterContext(serviceCollection, connectionString);
             RegisterScoped(serviceCollection);
         }
 
-         private static void RegisterContext(IServiceCollection serviceCollection)
+         private static void RegisterContext(IServiceCollection serviceCollection, string connectionString)
         {
-            serviceCollection.AddDbContext<>(options =>
+            serviceCollection.AddDbContext<CONTEXT>(options =>
                 options.UseMySql(
-                    "",
+                    connectionString,
                     new MySqlServerVersion(new Version(8, 0, 11))
                 )
             );
